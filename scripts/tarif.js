@@ -23,8 +23,7 @@ $(document).ready(function () {
         rangeParent.querySelectorAll('.ui-slider-handle')
         rangeParent.querySelector('.ui-slider-handle').style.left = document.querySelector(".range-static").value + '%'
         rangeParent.querySelector('.ui-slider-range').style.width = document.querySelector(".range-static").value + '%'
-      }else if(document.querySelector(".range-static").value >100){
-        document.querySelector(".range-static").value = 100
+      }else if(document.querySelector(".range-static").value >100 && document.querySelector(".range-static").value <= 200){
         jQuery(".fcalcp5_vedyshiy_rez").html(
           "<span class='runner__label'>" +
             addSpaces(document.querySelector(".range-static").value) +
@@ -32,8 +31,19 @@ $(document).ready(function () {
         );
         let rangeParent = e.target.previousSibling.parentNode
         rangeParent.querySelectorAll('.ui-slider-handle')
-        rangeParent.querySelector('.ui-slider-handle').style.left = document.querySelector(".range-static").value + '%'
-        rangeParent.querySelector('.ui-slider-range').style.width = document.querySelector(".range-static").value + '%'
+        rangeParent.querySelector('.ui-slider-handle').style.left = '100%'
+        rangeParent.querySelector('.ui-slider-range').style.width = '100%'
+      }else if(document.querySelector(".range-static").value >200){
+        document.querySelector(".range-static").value = 200
+        jQuery(".fcalcp5_vedyshiy_rez").html(
+          "<span class='runner__label'>" +
+            addSpaces(document.querySelector(".range-static").value) +
+            "</span>"
+        );
+        let rangeParent = e.target.previousSibling.parentNode
+        rangeParent.querySelectorAll('.ui-slider-handle')
+        rangeParent.querySelector('.ui-slider-handle').style.left = '100%'
+        rangeParent.querySelector('.ui-slider-range').style.width = '100%'
       }
 
     crachet();
@@ -49,8 +59,7 @@ $(document).ready(function () {
       rangeParent.querySelectorAll('.ui-slider-handle')
       rangeParent.querySelector('.ui-slider-handle').style.left = document.querySelector(".range-dinam").value + '%'
       rangeParent.querySelector('.ui-slider-range').style.width = document.querySelector(".range-dinam").value + '%'
-    }else if(document.querySelector(".range-dinam").value >100){
-      document.querySelector(".range-dinam").value = 100
+    }else if( document.querySelector(".range-dinam").value > 100 && document.querySelector(".range-dinam").value <= 200 ){
       jQuery(".fcalcp5_decor_rez").html(
         "<span class='runner__label'>" +
           addSpaces(document.querySelector(".range-dinam").value) +
@@ -58,8 +67,19 @@ $(document).ready(function () {
       );
       let rangeParent = e.target.previousSibling.parentNode
       rangeParent.querySelectorAll('.ui-slider-handle')
-      rangeParent.querySelector('.ui-slider-handle').style.left = document.querySelector(".range-dinam").value + '%'
-      rangeParent.querySelector('.ui-slider-range').style.width = document.querySelector(".range-dinam").value + '%'
+      rangeParent.querySelector('.ui-slider-handle').style.left = '100%'
+      rangeParent.querySelector('.ui-slider-range').style.width = '100%'
+    }else if( document.querySelector(".range-dinam").value > 200){
+      document.querySelector(".range-dinam").value = 200
+      jQuery(".fcalcp5_decor_rez").html(
+        "<span class='runner__label'>" +
+          addSpaces(document.querySelector(".range-dinam").value) +
+          "</span>"
+      );
+      let rangeParent = e.target.previousSibling.parentNode
+      rangeParent.querySelectorAll('.ui-slider-handle')
+      rangeParent.querySelector('.ui-slider-handle').style.left = '100%'
+      rangeParent.querySelector('.ui-slider-range').style.width = '100%'
     }
 
     crachet();
@@ -75,8 +95,8 @@ $(document).ready(function () {
       rangeParent.querySelectorAll('.ui-slider-handle')
       rangeParent.querySelector('.ui-slider-handle').style.left = document.querySelector(".range-HTML").value + '%'
       rangeParent.querySelector('.ui-slider-range').style.width = document.querySelector(".range-HTML").value + '%'
-    }else if(document.querySelector(".range-HTML").value >100){
-      document.querySelector(".range-HTML").value = 100
+    }else if(document.querySelector(".range-HTML").value >100 && document.querySelector(".range-HTML").value <= 200 ){
+
       jQuery(".fcalcp5_html_rez").html(
         "<span class='runner__label'>" +
           addSpaces(document.querySelector(".range-HTML").value) +
@@ -84,10 +104,21 @@ $(document).ready(function () {
       );
       let rangeParent = e.target.previousSibling.parentNode
       rangeParent.querySelectorAll('.ui-slider-handle')
-      rangeParent.querySelector('.ui-slider-handle').style.left = document.querySelector(".range-HTML").value + '%'
-      rangeParent.querySelector('.ui-slider-range').style.width = document.querySelector(".range-HTML").value + '%'
+      rangeParent.querySelector('.ui-slider-handle').style.left =  '100%'
+      rangeParent.querySelector('.ui-slider-range').style.width = '100%'
+    }else if(document.querySelector(".range-HTML").value > 200){
+      document.querySelector(".range-HTML").value = 200
+      jQuery(".fcalcp5_html_rez").html(
+        "<span class='runner__label'>" +
+          addSpaces(document.querySelector(".range-HTML").value) +
+          "</span>"
+      );
+      let rangeParent = e.target.previousSibling.parentNode
+      rangeParent.querySelectorAll('.ui-slider-handle')
+      rangeParent.querySelector('.ui-slider-handle').style.left =  '100%'
+      rangeParent.querySelector('.ui-slider-range').style.width = '100%'
     }
-
+    
     crachet();
   });
 

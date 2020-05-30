@@ -1,0 +1,62 @@
+.page{
+
+    border-radius: 20px;
+
+    background: white;
+    position: relative;
+
+    width: 96%;
+    margin-left: 2%;
+
+    height: 94vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+
+    overflow: visible !important;
+
+    &__label{
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        color: #272727;
+
+        margin-top: 0;
+
+        margin-bottom: 0;
+        &_2{
+
+            width: 325px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .page{
+        &__label{
+            line-height: 22px;
+            font-size: 19px;
+            width: 300px;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .page{
+        &__label{
+
+            width: 236px;
+
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            
+            color: #272727;
+        }
+    }
+}
+
