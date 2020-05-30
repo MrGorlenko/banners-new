@@ -68,3 +68,14 @@
     
     color: #FFFFFF;
 }
+
+
+@media (max-width: 768px){
+
+    .runner{
+        &__number{
+            display: none;
+        }
+    }
+
+}

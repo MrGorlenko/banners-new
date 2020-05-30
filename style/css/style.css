@@ -137,7 +137,7 @@
 @media (max-width: 376px) {
   .page {
     margin-top: -50px !important;
-    height: 97vh !important;
+    height: 94vh !important;
   }
 }
 
@@ -1056,6 +1056,12 @@
   color: #FFFFFF;
 }
 
+@media (max-width: 768px) {
+  .runner__number {
+    display: none;
+  }
+}
+
 .icons img {
   margin-right: 25px;
 }
@@ -1561,7 +1567,6 @@
   }
   .runner__decs_left {
     text-align: start;
-    padding-left: 15px;
   }
   .summarize {
     width: 200px;
@@ -1633,7 +1638,7 @@
 
 @media (max-width: 376px) {
   .page4__title {
-    margin-top: 0px;
+    margin-top: 20px;
   }
   .summarize {
     margin-top: 15px;
