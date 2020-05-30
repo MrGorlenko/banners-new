@@ -1,0 +1,215 @@
+@media (max-width: 992px){
+
+    .page4{
+        &__label{
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;      
+            
+            width: 265px;
+        }
+    }
+
+    .runner{
+        margin-left: 15px;
+        margin-top: 8px;
+        width: 245px;    
+
+        &__label{
+            margin-left: -160px;
+        }
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .page4{
+
+        &__title{
+            margin-top: 60px;
+            margin-bottom: 3px;
+            font-size: 25px;
+        }
+
+        &__label{
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;      
+            
+            width: 265px;
+        }
+    }
+
+    .runner{
+        margin-left: 15px;
+        margin-top: 8px;
+        width: 245px;    
+        &__decs{
+            font-size: 12px;
+            width: 100%;
+            &_left{
+                text-align: start;
+                padding-left: 15px;
+            }
+        }
+    }
+
+    .summarize{
+        width: 200px;
+        height: 350px;
+        margin-top: 50px;
+        padding-bottom: 65px;
+
+        min-height: 250px;
+
+        justify-content: space-around;
+
+        &__banners{
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+
+        &__button{
+            margin-top: 10px;
+        }
+    }
+
+    .fcalcp1{
+        flex-direction: column;
+        height: 475px;
+    }
+
+    .fcalcp2 {
+        height: 55px;
+    }
+
+    .fcalcp9{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+}
+
+@media (max-width: 576px){
+    .container_4{
+        height: 80%;
+        padding-left: 0;
+    }
+
+    .page4{
+        &__title{
+            margin-top: 20px;
+
+            padding-left: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        &__label{
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .fcalcp1{
+        height: 320px;
+
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+
+    }
+
+    .fcalcp2{
+        height: 45px;
+    }
+
+    .runner{
+        &__decs{
+            line-height: 12px;
+            color: #C7DDE3;
+            font-size: 12px;
+        }
+    }
+
+    .summarize{
+        margin-top: 25px;
+    }
+}
+
+
+@media (max-width: 380px) and (min-height: 666px){
+
+
+
+    .summarize{
+        margin-top: 40px !important;
+    }
+
+}
+
+@media (max-width: 376px){
+
+    .page4{
+        &__title{
+            margin-top: 0px;
+        }
+    }
+
+    .summarize{
+        margin-top: 15px;
+        min-height: 210px;
+        &__banners{
+            font-size: 14px;
+        }
+    }
+
+    .fcalcp9{
+        font-size: 25.2012px;
+        line-height: 12px;
+    }
+
+}
+
+
+@media (max-width: 330px) and (max-height: 570px){
+
+    .page4{
+        &__title{
+            margin-top: 40px;
+
+            font-size: 20px;
+            height: 32px;
+            margin-top: 55px;
+
+        }
+
+        &__label{
+            margin-bottom: 0;
+
+            padding-left: 15px;
+        }
+    }
+
+    .summarize{
+        margin-top: 15px;
+        &__banners{
+            font-size: 15px;
+        }
+
+        &__line{
+            font-size: 12px;
+        }
+
+        &__amount{
+            height: 45px;
+        }
+    }
+
+    .fcalcp9{
+        height: 31px;
+        margin-top: 0;
+    }
+
+}

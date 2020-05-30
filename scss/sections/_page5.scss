@@ -1,0 +1,181 @@
+.page_5{
+    opacity: 0;
+}
+
+.page5{
+    &__title{
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        
+        text-transform: uppercase;
+        
+        color: #272727;
+        position: absolute;
+        left: 5%;
+
+        &_cont{
+            margin-top: -15px;
+        }
+
+    }
+
+    &__team{
+        display: flex;
+        width: 750px;
+        justify-content: space-between;
+
+
+    }
+
+    &__content{
+        margin-left: 260px;
+    }
+
+    &__name{
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #272727;
+
+        margin-top: 25px;
+        margin-bottom: 4px;
+    }
+
+    &__position{
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        
+        color: #272727;
+
+        margin-top: 0;
+        margin-bottom: 0;
+        
+    }
+
+    &__block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+    }
+
+    &__email{
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        
+        color: #272727;
+
+        text-decoration: none;
+    }
+
+    &__contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__contacts{
+        height: 80px;
+        justify-content: space-between;
+    }
+
+    &__subtitle{
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        
+        color: #272727;
+
+        position: absolute;
+        bottom: 0px;
+    }
+
+}
+
+@media (max-width: 1200px){
+
+    .page5{
+        &__content{
+            margin-left: 185px;
+        }
+
+        &__team{
+            width: 600px;
+        }
+
+        &__block{
+            img{
+
+                width: 100px;
+                height: 100px;
+
+            }
+        }
+    }
+
+}
+
+@media (max-width: 992px){
+
+    .container_5{
+        height: 90%;
+        margin-top: 5%;
+    }
+
+    .page5{
+
+        &__title{
+            &_team{
+                top: 45px;
+            }
+            &_cont{
+                margin-top: -60px;
+            }
+        }
+
+        &__content{
+            margin-left: 0;
+        }
+
+        &__team{
+            width: 300px;
+            flex-wrap: wrap;
+            height: 285px;
+            padding-top: 65px;
+        }
+
+        &__block{
+            img{
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        &__name{
+            margin-top: 10px;
+        }
+    }
+
+}

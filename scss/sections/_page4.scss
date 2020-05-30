@@ -1,0 +1,29 @@
+.page_4{
+    opacity: 0;
+}
+
+.page4{
+    &__title{
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        text-transform: uppercase;
+    
+        color: #272727;
+
+        margin-bottom: 20px;
+    }
+    &__label{
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        
+        color: #272727;
+
+        margin-bottom:  4%;
+    }
+}

@@ -1,0 +1,70 @@
+.runner{
+    width: 380px;
+    height: 2px !important;
+    margin-left: 200px;
+    margin-top: -25px;
+
+    background: #C7DDE3 !important;
+    &__label{
+        margin-top: 10px;
+        margin-bottom: 90px;
+        display: block;
+    }
+    &__decs{
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19.291px;
+        line-height: 24px;
+
+        text-transform: uppercase;
+        
+        color: #272727;  
+        
+        width: 175px;
+        text-align: end;
+    }
+}
+
+.fcalcp6, .fcalcp5_vedyshiy_rez{
+    margin-top: 10px;
+    margin-bottom: 90px;
+    display: block;
+    padding-left: 200px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+    border-radius: 50%;
+    background: radial-gradient(101.47% 101.47% at 35.29% 73.53%, #5FD9FF 0%, #D25CDC 100%) !important;
+    box-shadow: 0px 5px 6px rgba(176, 128, 218, 0.3) !important;
+    margin-top: -6px;
+    outline: none;
+}
+
+.ui-slider-horizontal .ui-slider-range-min{
+    background: radial-gradient(75.88% 5874.75% at 0% 73.53%, #5FD9FF 0%, #D25CDC 100%);
+}
+
+
+.fcalcp2{
+    height: 80px;
+}
+
+.fcalcp1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.fcalcp9{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31.2012px;
+    line-height: 39px;
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+}

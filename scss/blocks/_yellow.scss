@@ -1,0 +1,41 @@
+.yellow{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 53%;
+    &_mobile{
+        display: none;
+        position: absolute;
+        width: 53%;
+        right: 0px;
+        bottom: -1px;
+        border-radius: 20px;
+    }
+}
+
+@media(max-height: 721px){
+    .yellow{
+        width: 46%;
+    }
+}
+
+@media(max-width: 992px){
+    .yellow{
+        display: none;
+        &_mobile{
+            display: block;
+            width: 45%;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .yellow{
+        &_mobile{
+            bottom: 0px;
+            margin-left: 15%;
+            width: 350px;
+        }
+    }
+}
+

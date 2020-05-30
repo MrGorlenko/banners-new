@@ -1,0 +1,56 @@
+/* .runner__decs{
+                        text-align: left;
+                    }
+                .fcalcp2{
+                    margin-bottom: 0px;
+                    padding-left: 20;
+                }
+                .fcalcp2:last-child{
+                    margin-bottom: 0px;
+                }
+                .runner-wrapp{
+                    display: flex;
+                }
+                .runner-wrapp input::-webkit-outer-spin-button,
+                .runner-wrapp input::-webkit-inner-spin-button {
+                    display: none; 
+                    -webkit-appearance: none;
+                    margin: 0;
+                } */
+.runner-wrapp input {
+  display: none;
+}
+@media (max-width: 567px) {
+  .runner__decs {
+    text-align: right;
+    padding-left: 0;
+  }
+  .fcalcp2 {
+    margin-bottom: 20px;
+    padding-left: 0;
+  }
+  .fcalcp2:last-child {
+    margin-bottom: 0px;
+  }
+  .runner-wrapp {
+    display: flex;
+  }
+  .runner-wrapp input::-webkit-outer-spin-button,
+  .runner-wrapp input::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .runner-wrapp input {
+    margin-left: 10px;
+    outline: none;
+    border: 0px;
+    width: 30px;
+    display: block;
+  }
+}
+@media (max-width: 376px) {
+  .summarize {
+    margin-top: 25px;
+  }
+}

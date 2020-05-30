@@ -1,0 +1,27 @@
+.page2{
+    &__title{
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        text-transform: uppercase;
+
+        color: #272727;
+
+        margin-top: 0;
+    }
+}
+
+.page_2{
+    opacity: 0;
+}
+
+@media (max-width: 576px){
+    .page2{
+        &__title{
+            margin-bottom: 10px;
+            font-size: 26px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.logo{
+    position: absolute;
+    top:8%;
+    left: 7%;
+
+    z-index: 9002;
+    &__line{
+        width: 165px;
+        height: 5px;
+        margin-top: 8px;
+        &_1{
+            background: linear-gradient(90deg, #F244C7 0%, #F1D044 100%);
+        }
+        &_2{
+            background: linear-gradient(270deg, #A2BDF5 0%, #ECB1EA 100%);
+        }
+        &_3{
+            background: linear-gradient(232.49deg, #C74BE7 -2.27%, #369FEF 44.29%, #6EE0A3 95.96%);
+        }
+        &_4{
+            background: linear-gradient(189.05deg, #47C9F1 10.27%, #CC6ED4 97.16%);
+        }
+        &_5{
+            background: linear-gradient(232.49deg, #F7AC01 -2.27%, #FE2E00 95.96%);
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .logo{
+        left: 7%;
+    }
+}
+
+@media (max-width: 992px){
+    .logo{
+        z-index: 10001;
+    }
+}
+
+
+@media (max-width: 376px){
+
+    .logo{
+        margin-top: 15px;
+    }
+
+}
