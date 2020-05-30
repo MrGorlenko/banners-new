@@ -248,6 +248,11 @@ $(document).ready(function () {
     jQuery(".summarize__line_html ").html(
       "<span>Перевод в HTML: " + addSpaces(sum_html) + "</span>"
     );
+
+
+    $(".form input[name='static']").val(sum_static);
+    $(".form input[name='dynamic']").val(sum_dinam);
+    $(".form input[name='html']").val(sum_html);
   }
 
   function stop() {

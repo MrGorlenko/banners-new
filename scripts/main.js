@@ -35,6 +35,9 @@ $(document).ready(function(){
                 $('.logo__line').removeClass('logo__line_5');
                 /* LOGO LINE */
 
+                $('#mar-dynamic-mobile').css('z-index', 'initial');
+                $('#mar-video').css('z-index', '-100');
+
             } else {
                 $('.page_1').css('opacity', '0');
             }
@@ -64,6 +67,8 @@ $(document).ready(function(){
                 $('.logo__line').removeClass('logo__line_5');
                 /* LOGO LINE */
 
+                $('#mar-video').css('z-index', 'initial');
+
             } else {
                 $('.page_2').css('opacity', '0');
             }
@@ -92,6 +97,9 @@ $(document).ready(function(){
                 $('.logo__line').removeClass('logo__line_5');
                 /* LOGO LINE */
 
+                $('#mar-dynamic-mobile').css('z-index', 'initial');
+                $('#mar-video').css('z-index', '-100');
+
             } else {
                 $('.page_3').css('opacity', '0');
             }
@@ -116,6 +124,9 @@ $(document).ready(function(){
                 $('.logo__line').addClass('logo__line_4');
                 $('.logo__line').removeClass('logo__line_5');
                 /* LOGO LINE */
+
+                $('#mar-dynamic-mobile').css('z-index', 'initial');
+                $('#mar-video').css('z-index', '-100');
 
             } else {
                 $('.page_4').css('opacity', '0');
@@ -142,6 +153,9 @@ $(document).ready(function(){
                 $('.logo__line').removeClass('logo__line_4');
                 $('.logo__line').addClass('logo__line_5');
                 /* LOGO LINE */
+
+                $('#mar-dynamic-mobile').css('z-index', 'initial');
+                $('#mar-video').css('z-index', '-100');
 
             } else {
                 $('.page_5').css('opacity', '0');
@@ -347,6 +361,10 @@ function crachet() {
     jQuery(".summarize__line_dinam ").html("<span>Динамичный баннер: " + addSpaces(sum_dinam) + addSpaces(sum_dinam_sale) + "</span>");
     jQuery(".summarize__line_html ").html("<span>Перевод в HTML: " + addSpaces(sum_html) + "</span>");
 
+    $(".form input[name='static']").val(sum_static);
+    $(".form input[name='dynamic']").val(sum_dinam);
+    $(".form input[name='html']").val(sum_html);
+
 }
 
 
@@ -404,7 +422,6 @@ function stop(){
 
 
 
-
     toggle1.on('click', function(){
         $('#mar-static').removeClass('marquee_none');
         $('#mar-dynamic').addClass('marquee_none');
@@ -414,6 +431,11 @@ function stop(){
 
         $('#mar-static-mobile').removeClass('marquee_none');
         $('#mar-dynamic-mobile').addClass('marquee_none');
+
+        $('.video').css('z-index', '-1')
+        $('#mar-dynamic-mobile').css('z-index', 'initial');
+        $('#mar-html').css('z-index', '-100');
+        $('#mar-video').css('z-index', '-100');
     })
 
     toggle2.on('click', function(){
@@ -425,6 +447,11 @@ function stop(){
 
         $('#mar-static-mobile').addClass('marquee_none');
         $('#mar-dynamic-mobile').removeClass('marquee_none');
+
+        $('.video').css('z-index', '900')
+        $('#mar-dynamic-mobile').css('z-index', '12000');
+        $('#mar-html').css('z-index', '-100');
+        $('#mar-video').css('z-index', '-100');
     })
 
     toggle3.on('click', function(){
@@ -436,6 +463,12 @@ function stop(){
 
         $('#mar-static-mobile').addClass('marquee_none');
         $('#mar-dynamic-mobile').addClass('marquee_none');
+
+
+        $('.video').css('z-index', '-1')
+        $('#mar-dynamic-mobile').css('z-index', 'initial');
+        $('#mar-html').css('z-index', 'initial');
+        $('#mar-video').css('z-index', '-100');
     })
 
     toggle4.on('click', function(){
@@ -447,6 +480,56 @@ function stop(){
 
         $('#mar-static-mobile').addClass('marquee_none');
         $('#mar-dynamic-mobile').addClass('marquee_none');
+
+        $('.video').css('z-index', '-1')
+        $('#mar-dynamic-mobile').css('z-index', 'initial');
+        $('#mar-html').css('z-index', '-100');
+        $('#mar-video').css('z-index', 'initial');
+    })
+
+
+    $('.video_1').on('click', function(event){
+        $('.video_modal_1').addClass('video_modal_active');
+    })
+
+    $('.video_2').on('click', function(event){
+        $('.video_modal_2').addClass('video_modal_active');
+    })
+
+    $('.video_3').on('click', function(event){
+        $('.video_modal_3').addClass('video_modal_active');
+    })
+
+    $('.video_4').on('click', function(event){
+        $('.video_modal_4').addClass('video_modal_active');
+    })
+
+    $('.video_5').on('click', function(event){
+        $('.video_modal_5').addClass('video_modal_active');
+    })
+
+    $('.video_6').on('click', function(event){
+        $('.video_modal_6').addClass('video_modal_active');
+    })
+
+    $('.video_7').on('click', function(event){
+        $('.video_modal_7').addClass('video_modal_active');
+    })
+
+    $('.video_8').on('click', function(event){
+        $('.video_modal_8').addClass('video_modal_active');
+    })
+
+    $('.video_9').on('click', function(event){
+        $('.video_modal_9').addClass('video_modal_active');
+    })
+
+    $('.video_10').on('click', function(event){
+        $('.video_modal_10').addClass('video_modal_active');
+    })
+
+    $('.video_modal-close').on('click', function(event){
+        $('.video_modal').removeClass('video_modal_active');
     })
 
 })
